@@ -1,0 +1,14 @@
+{
+  "apiVersion": 2,
+  "name": "modern-blocks/testimonial-grid",
+  "title": "Testimonial Grid",
+  "category": "widgets",
+  "icon": "groups",
+  "description": "A responsive testimonial grid with photos, names, and quotes.",
+  "supports": {
+    "html": false
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./editor.css",
+  "style": "file:./style.css"
+}
