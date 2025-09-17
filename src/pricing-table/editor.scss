@@ -1,0 +1,48 @@
+.mwb-pricing-table {
+  padding: 3rem 1.5rem;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.mwb-pricing-plan {
+  background: #1e222a;
+  border: 1px dashed #555;
+  border-radius: 10px;
+  padding: 2rem;
+  text-align: center;
+  
+  .plan-title {
+    font-size: clamp(1.6rem, 1.2rem + 1vw, 2.2rem);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+
+  .plan-subtitle {
+    font-size: clamp(1.1rem, 0.9rem + 0.6vw, 1.4rem);
+    color: #aaa;
+    margin-bottom: 1rem;
+  }
+
+  .price {
+    font-size: clamp(2rem, 1.5rem + 1.2vw, 2.8rem);
+    font-weight: 800;
+    color: #fc636b;
+    margin: 1rem 0 1.5rem;
+  }
+
+  ul li {
+    margin: 0.4rem 0;
+    color: #ccc;
+  }
+
+  .plan-cta {
+    display: inline-block;
+    margin-top: 1rem;
+    background: #fc636b;
+    color: #fff;
+    font-size: clamp(1rem, 0.95rem + 0.3vw, 1.2rem);
+    padding: 0.8rem 2rem;
+    border-radius: 40px;
+  }
+}

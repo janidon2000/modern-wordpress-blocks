@@ -1,0 +1,63 @@
+{
+  "apiVersion": 2,
+  "name": "mwb/pricing-table",
+  "title": "MWB Pricing Table",
+  "category": "widgets",
+  "icon": "money",
+  "description": "Responsive pricing plans with highlight option.",
+  "supports": {
+    "align": [
+      "wide",
+      "full"
+    ],
+    "spacing": true
+  },
+  "editorScript": "file:./index.js",
+  "style": "file:./style-index.css",
+  "editorStyle": "file:./index.css",
+  "attributes": {
+    "plans": {
+      "type": "array",
+      "default": [
+        {
+          "title": "Starter",
+          "price": "$9/mo",
+          "features": [
+            "Basic feature 1",
+            "Basic feature 2",
+            "Basic feature 3"
+          ],
+          "featured": false,
+          "ctaLabel": "Get Starter",
+          "ctaUrl": "#"
+        },
+        {
+          "title": "Pro",
+          "price": "$29/mo",
+          "features": [
+            "Pro feature 1",
+            "Pro feature 2",
+            "Pro feature 3",
+            "Pro feature 4"
+          ],
+          "featured": true,
+          "ctaLabel": "Go Pro",
+          "ctaUrl": "#"
+        },
+        {
+          "title": "Enterprise",
+          "price": "$99/mo",
+          "features": [
+            "Enterprise feature 1",
+            "Enterprise feature 2",
+            "Enterprise feature 3",
+            "Priority support"
+          ],
+          "featured": false,
+          "ctaLabel": "Contact Us",
+          "ctaUrl": "#"
+        }
+      ]
+    }
+  }
+}

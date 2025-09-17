@@ -1,0 +1,40 @@
+{
+  "apiVersion": 2,
+  "name": "mwb/feature-grid",
+  "title": "MWB Feature Grid",
+  "category": "layout",
+  "icon": "screenoptions",
+  "description": "Responsive Feature Grid with icons and descriptions.",
+  "supports": {
+    "align": [
+      "wide",
+      "full"
+    ],
+    "spacing": true
+  },
+  "editorScript": "file:./index.js",
+  "style": "file:./style-index.css",
+  "editorStyle": "file:./index.css",
+  "attributes": {
+    "items": {
+      "type": "array",
+      "default": [
+        {
+          "icon": "⚡",
+          "title": "Custom Gutenberg Blocks",
+          "text": "Modern, reusable blocks tailored for editors and brands."
+        },
+        {
+          "icon": "🎨",
+          "title": "Responsive CSS Layouts",
+          "text": "Fluid designs using Grid, Flexbox, and theme.json values."
+        },
+        {
+          "icon": "🔗",
+          "title": "React Interactivity",
+          "text": "Accessible, dynamic blocks integrated seamlessly."
+        }
+      ]
+    }
+  }
+}

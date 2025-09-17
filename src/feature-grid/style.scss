@@ -1,0 +1,40 @@
+.mwb-feature-grid {
+  padding: 5rem 1.5rem;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.mwb-feature-card {
+  background: #171b21;
+  padding: 2rem 1.5rem;
+  border-radius: 12px;
+  text-align: center;
+  color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0,0,0,.45),
+                0 0 0 2px rgba(252,99,107,.3);
+  }
+
+  &__icon {
+    font-size: clamp(2rem, 1.5rem + 1vw, 3rem);
+    margin-bottom: 1rem;
+    color: #fc636b;
+  }
+
+  &__title {
+    font-size: clamp(1.4rem, 1rem + 1vw, 2rem); 
+    margin-bottom: 1.25rem; 
+    font-weight: 700;
+    line-height: 1.3;
+  }
+
+  &__text {
+    font-size: clamp(15px, 0.9rem + 0.8vw, 16px);
+    color: rgba(255,255,255,0.8);
+    line-height: 1.65;
+  }
+}

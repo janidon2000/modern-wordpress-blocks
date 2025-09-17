@@ -1,0 +1,40 @@
+{
+  "apiVersion": 2,
+  "name": "mwb/testimonial-grid",
+  "title": "MWB Testimonial Grid",
+  "category": "widgets",
+  "icon": "groups",
+  "description": "Grid layout with client testimonials, avatars, names, and quotes.",
+  "supports": {
+    "align": ["wide", "full"],
+    "spacing": true
+  },
+  "editorScript": "file:./index.js",
+  "style": "file:./style-index.css",
+  "editorStyle": "file:./index.css",
+  "attributes": {
+    "items": {
+      "type": "array",
+      "default": [
+        {
+          "name": "Jane Doe",
+          "quote": "The Gutenberg blocks were seamless and elegant!",
+          "imageUrl": "",
+          "imageAlt": "Jane avatar"
+        },
+        {
+          "name": "John Smith",
+          "quote": "Excellent CSS + React state handling.",
+          "imageUrl": "",
+          "imageAlt": "John avatar"
+        },
+        {
+          "name": "Priya K",
+          "quote": "Fluid layouts, clean design system, very professional.",
+          "imageUrl": "",
+          "imageAlt": "Priya avatar"
+        }
+      ]
+    }
+  }
+}

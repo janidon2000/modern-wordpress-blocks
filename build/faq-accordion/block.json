@@ -1,0 +1,36 @@
+{
+  "apiVersion": 2,
+  "name": "mwb/faq-accordion",
+  "title": "MWB FAQ Accordion",
+  "category": "widgets",
+  "icon": "editor-help",
+  "description": "Accessible FAQ accordion with expandable questions and answers.",
+  "supports": {
+    "align": [
+      "wide",
+      "full"
+    ],
+    "spacing": true
+  },
+  "editorScript": "file:./index.js",
+  "style": "file:./style-index.css",
+  "editorStyle": "file:./index.css",
+  "script": "file:./frontend.js",
+  "attributes": {
+    "items": {
+      "type": "array",
+      "default": [
+        {
+          "question": "Do these blocks support dark themes?",
+          "answer": "Yes! They respect theme colors.",
+          "open": false
+        },
+        {
+          "question": "Are they responsive?",
+          "answer": "Absolutely. Grid, Flexbox + clamp().",
+          "open": false
+        }
+      ]
+    }
+  }
+}

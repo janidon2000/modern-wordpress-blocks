@@ -1,0 +1,81 @@
+/* —— Hero CTA editor preview —— */
+
+.mwb-hero {
+  background: #171b21; 
+  color: #fff;
+  padding: 4rem 1.5rem; 
+  outline: 2px dashed #444; 
+
+  &__inner {
+    display: grid;
+    gap: 2rem;
+    align-items: center;
+    max-width: 1000px;
+    margin-inline: auto;
+    grid-template-columns: 1fr;
+  }
+
+  &__image {
+    text-align: center;
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+  }
+
+  &__content {
+    text-align: center;
+    max-width: 500px;
+    margin-inline: auto;
+  }
+
+  &__title {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    color: #fff;
+  }
+
+  &__subtitle {
+    font-size: clamp(1.1rem, 2vw, 1.4rem);
+    margin-bottom: 2rem;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  &__cta {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .hero-btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 40px;
+    font-weight: 700;
+    letter-spacing: 0.25px;
+    text-decoration: none;
+
+    &.primary {
+      background: #fc636b;
+      color: #fff;
+    }
+
+    &.secondary {
+      background: transparent;
+      border: 2px solid rgba(255,255,255,0.4);
+      color: #fff;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .mwb-hero__inner {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "apiVersion": 2,
+  "name": "mwb/content-slider",
+  "title": "MWB Content Slider",
+  "category": "widgets",
+  "icon": "images-alt2",
+  "description": "Responsive content slider/carousel with navigation controls.",
+  "supports": {
+    "align": [
+      "wide",
+      "full"
+    ],
+    "spacing": true
+  },
+  "editorScript": "file:./index.js",
+  "style": "file:./style-index.css",
+  "editorStyle": "file:./index.css",
+  "script": "file:./frontend.js",
+  "attributes": {
+    "slides": {
+      "type": "array",
+      "default": [
+        {
+          "title": "CSS Wizardry",
+          "text": "Fluid responsive layouts with Grid and Flexbox.",
+          "imageUrl": "",
+          "imageAlt": "CSS slide"
+        },
+        {
+          "title": "React Powered",
+          "text": "Dynamic interactivity, accessible by design.",
+          "imageUrl": "",
+          "imageAlt": "React slide"
+        },
+        {
+          "title": "Accessibility First",
+          "text": "Keyboard nav, aria-labels and WCAG compliance.",
+          "imageUrl": "",
+          "imageAlt": "Accessibility slide"
+        }
+      ]
+    },
+    "activeIndex": {
+      "type": "number",
+      "default": 0
+    }
+  }
+}

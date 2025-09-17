@@ -1,0 +1,13 @@
+{
+  "name": "modern-wordpress-blocks",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "wp-scripts build",
+    "start": "wp-scripts start"
+  },
+  "devDependencies": {
+    "@wordpress/scripts": "^26.18.0",
+    "sass": "^1.69.0"
+  }
+}

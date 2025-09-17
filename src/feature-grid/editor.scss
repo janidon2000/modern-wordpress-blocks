@@ -1,0 +1,36 @@
+/* —— Feature Grid editor preview —— */
+.mwb-feature-grid {
+  background: #171b21; 
+  padding: 3rem 1.5rem; 
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.mwb-feature-card {
+  background: #1e222a; 
+  border-radius: 10px;
+  border: 1px dashed #444; 
+  padding: 1.5rem;
+  text-align: center;
+
+  &__icon {
+    font-size: clamp(1.8rem, 1.4rem + 1vw, 2.5rem);
+    margin-bottom: 1rem;
+    color: #fc636b;
+  }
+
+  &__title {
+    font-size: clamp(1.4rem, 1rem + 1vw, 2rem);
+    margin-bottom: 1.2rem; 
+    font-weight: 700;
+    line-height: 1.3;
+    color: #fff;
+  }
+
+  &__text {
+    font-size: clamp(15px, 0.9rem + 0.8vw, 16px);
+    color: rgba(255,255,255,0.8);
+    line-height: 1.65;
+  }
+}

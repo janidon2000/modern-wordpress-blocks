@@ -1,0 +1,51 @@
+{
+  "apiVersion": 2,
+  "name": "mwb/hero-cta",
+  "title": "MWB Hero / Call To Action",
+  "category": "layout",
+  "icon": "align-pull-left",
+  "description": "Two-column Hero with left image, right text and CTA buttons. Fluid + theme-aware styling.",
+  "supports": {
+    "align": ["wide", "full"],
+    "spacing": true
+  },
+  "editorScript": "file:./index.js",
+
+  "style": "file:./style-index.css",
+  "editorStyle": "file:./index.css",
+
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "Crafting Modern WordPress Experiences"
+    },
+    "subtitle": {
+      "type": "string",
+      "default": "Custom Gutenberg blocks · Fluid CSS layouts · Accessible React components"
+    },
+    "heroImageUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "heroImageAlt": {
+      "type": "string",
+      "default": "Hero illustration"
+    },
+    "primaryLabel": {
+      "type": "string",
+      "default": "Explore My Blocks"
+    },
+    "primaryUrl": {
+      "type": "string",
+      "default": "#features"
+    },
+    "secondaryLabel": {
+      "type": "string",
+      "default": "Let’s Work Together"
+    },
+    "secondaryUrl": {
+      "type": "string",
+      "default": "#contact"
+    }
+  }
+}
